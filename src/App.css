@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: #888;
+  border-radius: 5px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fdfafa;
+  border-radius: 6px;
+  height: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+  border: 1px solid lightgray;
+}
+
+.heading {
+  position: relative;
+  animation: show 2s ease-in-out 1;
+}
+@keyframes show {
+  0% {
+    left: 30px;
+    opacity: 0.1;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+.sub-heading {
+  position: relative;
+  animation: show-sub 3s ease-out 1;
+}
+
+@keyframes show-sub {
+  0% {
+    opacity: 0;
+    left: 30px;
+  }
+  50% {
+    opacity: 0.1;
+    left: 30px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.img1 {
+  animation: img1 10s ease-in-out infinite;
+}
+@keyframes img1 {
+  0% {
+    opacity: 0;
+    
+  }
+  33% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.img2 {
+  animation: img2 20s ease-in-out infinite;
+}
+@keyframes img2 {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
